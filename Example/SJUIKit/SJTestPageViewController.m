@@ -52,7 +52,7 @@
     return vc;
 }
 
-- (UIView *)viewForHeaderWithPageViewController:(SJPageViewController *)pageViewController {
+- (UIView *)viewForHeaderInPageViewController:(SJPageViewController *)pageViewController {
     SJHeaderView *headerView = [SJHeaderView.alloc initWithFrame:CGRectZero];
     headerView.clipsToBounds = YES;
     headerView.image = [UIImage imageNamed:@"1"];

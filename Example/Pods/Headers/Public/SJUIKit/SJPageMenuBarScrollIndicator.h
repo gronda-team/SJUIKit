@@ -1,1 +1,1 @@
-../../../../../SJUIKit/PageViewController/PageMenuBar/Core/SJPageMenuBarScrollIndicator.h
+../../../../../SJUIKit/PageViewController/Core/SJPageMenuBarScrollIndicator.h

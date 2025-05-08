@@ -1,6 +1,6 @@
 {
   "name": "SJUIKit",
-  "version": "0.0.0.52",
+  "version": "0.0.0.58",
   "summary": "SJUIKit.",
   "description": "`Objective-C` UIKit",
   "homepage": "https://gitee.com/changsanjiang/SJUIKit",
@@ -13,15 +13,12 @@
   },
   "source": {
     "git": "https://gitee.com/changsanjiang/SJUIKit.git",
-    "tag": "0.0.0.52"
+    "tag": "0.0.0.58"
   },
   "platforms": {
-    "ios": "8.0",
-    "tvos": "8.0"
+    "ios": "8.0"
   },
-  "ios": {
-    "source_files": "SJUIKit/*.{h,m}"
-  },
+  "source_files": "SJUIKit/*.{h,m}",
   "subspecs": [
     {
       "name": "AsyncLoad",
@@ -68,15 +65,6 @@
           "source_files": "SJUIKit/AttributesFactory/Deprecated/*.{h,m}"
         }
       ]
-    },
-    {
-      "name": "Refresh",
-      "source_files": "SJUIKit/Refresh/*.{h,m}",
-      "dependencies": {
-        "MJRefresh": [
-
-        ]
-      }
     },
     {
       "name": "Date",
@@ -144,28 +132,17 @@
     },
     {
       "name": "PageViewController",
+      "source_files": "SJUIKit/PageViewController/*.{h,m}",
       "subspecs": [
         {
-          "name": "PageViewController",
-          "source_files": "SJUIKit/PageViewController/PageViewController/*.{h,m}",
-          "subspecs": [
-            {
-              "name": "Core",
-              "source_files": "SJUIKit/PageViewController/PageViewController/Core/**/*.{h,m}"
-            }
-          ]
-        },
-        {
-          "name": "PageMenuBar",
-          "source_files": "SJUIKit/PageViewController/PageMenuBar/*.{h,m}",
-          "subspecs": [
-            {
-              "name": "Core",
-              "source_files": "SJUIKit/PageViewController/PageMenuBar/Core/**/*.{h,m}"
-            }
-          ]
+          "name": "Core",
+          "source_files": "SJUIKit/PageViewController/Core/*.{h,m}"
         }
       ]
+    },
+    {
+      "name": "PlaybackListController",
+      "source_files": "SJUIKit/PlaybackListController/*.{h,m}"
     }
   ]
 }
